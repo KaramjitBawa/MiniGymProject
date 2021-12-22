@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>FITNESS FREAK::HOME</title>
+    <link rel="stylesheet" type="text/css" href="gym.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="custom.js"></script>
+	<script>
+		AllStates();
+	</script>
+    </head>
+    <body>
+    
+    <div id="wrapper">
+        <nav>
+        <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="locations.html">Locations</a></li>
+		<li><a href="Diet-plans.html">Diet Plans</a></li>
+        <li><a href="pricing-plans.html">Plans & Pricing</a></li>
+        <li><a href="registered_membership.php">Join Us</a>
+        </ul>
+        </nav>  
+        <header>
+        <img src="images/training-828715.jpg" alt="girl pic">
+         <h2>FITNESS FREAK</h2>
+        </header>
+        <main>
+        <section>
+              <form method="post" id="SearchData">
+				  <label for="cars">Choose a Province:</label>
+				  <select name="province" id="province" onchange="getAllCities(this.value)">
+				  </select>
+				  <label for="cars">Choose a City:</label>
+						<select name="city" id="cities" onchange="GetAllLocations(this.value)">
+						<option>Select a city</option>
+					  </select>
+					<label for="cars">Choose your location:</label>
+					  <select name="locations" id="locations" onchange="GetLocationData(this.value)">
+					  <option>Select a Location</option>
+					  </select>
+				</form>
+				<button style="background: #008000e6;padding: 8px 10px;border-radius: 6px;" onclick="window.open('registered_membership.php')">Join Us</button>
+			<p id="LocationDetails">
+			
+			</p>
+            </section>
+        </main>
+           <footer>
+           
+		<p id="copy"> Copyright &copy; 2021 FITNESS FREAK<br></p>
+</footer>
+    </div>
+    </body>
+</html>
